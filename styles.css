@@ -1,0 +1,1623 @@
+/* Brand color tokens (ARCH blue -> teal, matching the submission platform) */
+:root {
+    --brand: #2563eb;          /* primary brand blue (decorative / large headings) */
+    --brand-dark: #0d9488;     /* secondary brand teal (gradient end) */
+    --brand-link: #1d4ed8;     /* darker blue for small/interactive text — WCAG AA (6.3:1 on white) */
+    --brand-slate: #384446;    /* ARCH logo slate (letters, dark accents) */
+}
+
+/* CSS Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(135deg, #2563eb 0%, #0d9488 100%);
+    color: white;
+    padding: 2rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.nav-list a:hover {
+    background-color: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c2ddd9 100%);
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #2d3748;
+    line-height: 1.2;
+}
+
+.hero-description {
+    font-size: 1.3rem;
+    color: #4a5568;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #2563eb 0%, #0d9488 100%);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+}
+
+.btn-secondary {
+    background: white;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
+.btn-secondary:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Section Styles */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #2d3748;
+}
+
+.section-description {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #4a5568;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+}
+
+/* About Section */
+.about {
+    padding: 6rem 0;
+    background: white;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+}
+
+.about-stats {
+    display: grid;
+    gap: 2rem;
+}
+
+.stat {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.stat-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: #4a5568;
+    font-weight: 500;
+}
+
+/* AAAI 2026 Lab Section */
+.aaai2026 {
+    padding: 6rem 0;
+    background: white;
+}
+
+.aaai2026-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.aaai2026-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.aaai2026-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    color: #4a5568;
+}
+
+.aaai2026-meta-item strong {
+    color: #2d3748;
+}
+
+.aaai2026-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.aaai2026-link {
+    color: #2563eb;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #2563eb;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.aaai2026-link:hover {
+    background: #2563eb;
+    color: white;
+}
+
+.aaai2026-organizers {
+    font-size: 0.95rem;
+    color: #4a5568;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    text-align: center;
+    line-height: 2.2;
+}
+
+/* Researcher Links */
+.researcher-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.researcher-link:hover {
+    color: #0d9488;
+    text-decoration: underline;
+}
+
+.scholar-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+    vertical-align: middle;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.scholar-icon:hover {
+    opacity: 1;
+}
+
+/* Ensure scholar icon link stays visible after click/visited */
+a[title="Google Scholar"] {
+    display: inline;
+}
+
+a[title="Google Scholar"]:visited .scholar-icon,
+a[title="Google Scholar"]:active .scholar-icon {
+    display: inline-block;
+    opacity: 0.7;
+}
+
+.speaker-link {
+    color: #4a5568;
+    text-decoration: none;
+    border-bottom: 1px dotted #2563eb;
+    transition: all 0.2s ease;
+}
+
+.speaker-link:hover {
+    color: #2563eb;
+    border-bottom-style: solid;
+}
+
+/* Program Schedule Table */
+.program-section {
+    margin-bottom: 3rem;
+}
+
+.program-section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #2563eb;
+}
+
+.program-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.program-table th {
+    background: linear-gradient(135deg, #2563eb 0%, #0d9488 100%);
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.program-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: top;
+}
+
+.program-table tr:last-child td {
+    border-bottom: none;
+}
+
+.program-table tr:hover:not(.program-break) {
+    background-color: #f7fafc;
+}
+
+.program-break {
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+}
+
+.program-break td {
+    text-align: center;
+    font-weight: 600;
+    color: #2563eb;
+    padding: 1.5rem;
+}
+
+.program-time {
+    font-weight: 500;
+    color: #2563eb;
+    white-space: nowrap;
+}
+
+.program-topic {
+    font-weight: 500;
+    color: #2d3748;
+}
+
+.program-topic-desc {
+    font-size: 0.9rem;
+    color: #718096;
+    margin-top: 0.25rem;
+}
+
+.program-speaker {
+    color: #4a5568;
+}
+
+.program-resources {
+    min-width: 100px;
+}
+
+.colab-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.75rem;
+    background: #f7fafc;
+    color: #2563eb;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.colab-link:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    .program-table {
+        font-size: 0.9rem;
+    }
+
+    .program-table th,
+    .program-table td {
+        padding: 0.75rem 0.5rem;
+    }
+
+    /* Keep the Resources column (Colab/slides/eval links) visible; allow horizontal scroll instead of hiding it */
+    .program-table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .aaai2026-meta {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .program-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .program-section-title {
+        font-size: 1.25rem;
+    }
+}
+
+/* VNN-COMP 2026 Section */
+.vnncomp2026 {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+}
+
+.vnncomp2026-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.vnncomp2026-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.vnncomp2026-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    color: #4a5568;
+}
+
+.vnncomp2026-meta-item strong {
+    color: #2d3748;
+}
+
+.vnncomp2026-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.vnncomp2026-link {
+    color: #2563eb;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #2563eb;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.vnncomp2026-link:hover {
+    background: #2563eb;
+    color: white;
+}
+
+.vnncomp2026-section {
+    margin-bottom: 3rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.vnncomp2026-section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #2563eb;
+}
+
+/* FLoC Olympic Games callout — gold accent to stand out among the white cards */
+.olympics-callout {
+    background: linear-gradient(135deg, #fffaf0 0%, #ffffff 65%);
+    border-left: 5px solid #f6b73c;
+}
+
+.olympics-callout .vnncomp2026-section-title {
+    border-bottom-color: #f6b73c;
+}
+
+.olympics-cta {
+    margin-top: 1.25rem;
+}
+
+/* News Timeline */
+.news-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.news-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 1rem;
+    background: #f7fafc;
+    border-radius: 10px;
+    border-left: 4px solid #2563eb;
+}
+
+.news-date {
+    font-weight: 600;
+    color: #2563eb;
+    white-space: nowrap;
+    min-width: 120px;
+}
+
+.news-text {
+    color: #4a5568;
+}
+
+/* Dates Grid */
+.dates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.date-item {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+    background: #f7fafc;
+    border-radius: 10px;
+    border-left: 4px solid #cbd5e0;
+}
+
+.date-item.highlight {
+    border-left-color: #2563eb;
+    background: linear-gradient(135deg, #2563eb15 0%, #0d948815 100%);
+}
+
+.date-label {
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+.date-value {
+    color: #4a5568;
+}
+
+.date-item.highlight .date-value {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+/* Participation Grid */
+.participation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.participation-card {
+    padding: 1.5rem;
+    background: #f7fafc;
+    border-radius: 10px;
+    border-top: 4px solid #2563eb;
+}
+
+.participation-card h4 {
+    font-size: 1.2rem;
+    color: #2d3748;
+    margin-bottom: 0.75rem;
+}
+
+.participation-card p {
+    color: #4a5568;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.participation-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.participation-card li {
+    padding: 0.35rem 0;
+    color: #4a5568;
+    font-size: 0.9rem;
+}
+
+.participation-card li::before {
+    content: "• ";
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* Committee Grid */
+.committee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.committee-role {
+    padding: 1.25rem;
+    background: #f7fafc;
+    border-radius: 10px;
+}
+
+.committee-role h4 {
+    font-size: 1rem;
+    color: #2563eb;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.committee-role p {
+    color: #4a5568;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Resources Grid */
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.resource-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    background: #f7fafc;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.resource-link:hover {
+    border-color: #2563eb;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.15);
+}
+
+.resource-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.resource-text {
+    color: #4a5568;
+    font-weight: 500;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.resource-link:hover .resource-text {
+    color: #2563eb;
+}
+
+.section-text {
+    color: #4a5568;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Responsive adjustments for VNN-COMP 2026 */
+@media (max-width: 768px) {
+    .vnncomp2026-meta {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .news-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .news-date {
+        min-width: auto;
+    }
+
+    .dates-grid,
+    .participation-grid,
+    .committee-grid,
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Sponsors Section */
+.sponsors {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #ffffff 0%, #f5f7fa 100%);
+}
+
+.sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.sponsor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border: 1px solid #edf2f7;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sponsor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 40px rgba(37, 99, 235, 0.15);
+}
+
+.sponsor-logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90px;
+    margin-bottom: 1.5rem;
+}
+
+.sponsor-logo {
+    max-height: 64px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.sponsor-name {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 0.75rem;
+}
+
+.sponsor-desc {
+    color: #4a5568;
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin-bottom: 1.25rem;
+}
+
+.sponsor-visit {
+    margin-top: auto;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.sponsor-visit:hover {
+    color: #0d9488;
+    text-decoration: underline;
+}
+
+.sponsors-cta {
+    text-align: center;
+    margin-top: 3rem;
+    color: #4a5568;
+    font-size: 1.05rem;
+}
+
+.sponsors-cta a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.sponsors-cta a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .sponsors-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Competitions Section */
+.competitions {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, #2563eb, #0d9488);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.timeline-marker {
+    width: 20px;
+    height: 20px;
+    background: #2563eb;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 0 4px #2563eb;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.timeline-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 45%;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-right: 55%;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: 55%;
+}
+
+.timeline-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.timeline-description {
+    color: #4a5568;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.timeline-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: 1px solid #2563eb;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.timeline-link:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/* Repositories Section */
+.repositories {
+    padding: 6rem 0;
+    background: white;
+}
+
+.repo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.repo-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.repo-card:hover {
+    transform: translateY(-5px);
+}
+
+.repo-year {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 1.5rem;
+}
+
+.repo-links {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.repo-link {
+    color: #4a5568;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    background: #f7fafc;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.repo-link:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateX(5px);
+}
+
+.repo-note {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    color: #856404;
+}
+
+/* Contact Section */
+.contact {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #2563eb 0%, #0d9488 100%);
+    color: white;
+}
+
+.contact .section-title {
+    color: white;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.contact-list {
+    list-style: none;
+}
+
+.contact-list li {
+    padding: 0.5rem 0;
+    opacity: 0.9;
+}
+
+.contact-list li::before {
+    content: "✓ ";
+    color: #a7f3d0;
+    font-weight: bold;
+}
+
+.contact-links {
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-btn {
+    display: block;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: white;
+    color: #2563eb;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+.footer {
+    background: #2d3748;
+    color: white;
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-info h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.footer-info p {
+    opacity: 0.8;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+}
+
+.footer-bottom {
+    border-top: 1px solid #4a5568;
+    padding-top: 1rem;
+    text-align: center;
+    opacity: 0.6;
+}
+
+/* Participants Section */
+.participants {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+}
+
+.participants-table-wrapper {
+    overflow-x: auto;
+    margin-top: 2rem;
+}
+
+.participants-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.participants-table th {
+    background: linear-gradient(135deg, #2563eb 0%, #0d9488 100%);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.participants-table th:first-child {
+    text-align: left;
+    min-width: 150px;
+}
+
+.participants-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.participants-table td:first-child {
+    text-align: left;
+    font-weight: 500;
+}
+
+.participants-table tr:last-child td {
+    border-bottom: none;
+}
+
+.participants-table tr:hover {
+    background-color: #f7fafc;
+}
+
+.participants-table .tool-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.participants-table .tool-link:hover {
+    color: #0d9488;
+    text-decoration: underline;
+}
+
+.participants-table .checkmark {
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.participants-table .no-participation {
+    color: #cbd5e0;
+}
+
+/* Tools List Inline Expansion */
+.tools-list {
+    display: none;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.tools-list.expanded {
+    display: block;
+}
+
+.tools-list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 0.5rem;
+}
+
+.tools-list a {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: #4a5568;
+    text-decoration: none;
+    background: white;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.tools-list a:hover {
+    background: #2563eb;
+    color: white;
+}
+
+.tools-list span.tool-no-link {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: #718096;
+    background: white;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.tools-toggle {
+    cursor: pointer;
+}
+
+.tools-toggle .toggle-icon {
+    font-size: 0.75rem;
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+.tools-toggle.active .toggle-icon {
+    transform: rotate(180deg);
+}
+
+/* Report Link Styling */
+.repo-link.report-link {
+    background: linear-gradient(135deg, #2563eb15 0%, #0d948815 100%);
+    border-left: 3px solid #2563eb;
+}
+
+.repo-link.report-link:hover {
+    background: #2563eb;
+    color: white;
+    border-left: 3px solid #2563eb;
+}
+
+/* Publications Section */
+.publications-section {
+    margin-top: 3rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.publications-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #2563eb;
+}
+
+.overview-paper {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #2563eb10 0%, #0d948810 100%);
+    border-radius: 10px;
+    border-left: 4px solid #2563eb;
+}
+
+.overview-paper h4 {
+    font-size: 1.1rem;
+    color: #2563eb;
+    margin-bottom: 0.75rem;
+}
+
+.paper-citation {
+    color: #4a5568;
+    line-height: 1.7;
+}
+
+.paper-citation a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.paper-citation a:hover {
+    text-decoration: underline;
+}
+
+.bibtex-section h4 {
+    font-size: 1.1rem;
+    color: #2d3748;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.copy-bibtex-btn {
+    padding: 0.4rem 0.8rem;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.copy-bibtex-btn:hover {
+    background: #0d9488;
+    transform: translateY(-1px);
+}
+
+.copy-bibtex-btn.copied {
+    background: #48bb78;
+}
+
+.bibtex-code {
+    background: #2d3748;
+    color: #e2e8f0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    overflow-x: auto;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 2.5rem;
+    }
+    
+    .tagline {
+        font-size: 1.1rem;
+    }
+    
+    .nav-list {
+        gap: 1rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-description {
+        font-size: 1.1rem;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-item {
+        flex-direction: column !important;
+        align-items: flex-start;
+    }
+    
+    .timeline-marker {
+        left: 30px;
+        transform: translateX(-50%);
+    }
+    
+    .timeline-content {
+        width: calc(100% - 80px);
+        margin-left: 80px !important;
+        margin-right: 0 !important;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-links {
+        justify-content: center;
+    }
+    
+    .repo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .participants-table {
+        font-size: 0.9rem;
+    }
+
+    .participants-table th,
+    .participants-table td {
+        padding: 0.5rem;
+    }
+
+    .tools-list-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 4rem 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .timeline-content {
+        padding: 1.5rem;
+    }
+    
+    .timeline-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* ==========================================================================
+   Accessibility & WCAG AA contrast
+   ========================================================================== */
+
+/* Skip-to-content link (visible on keyboard focus) */
+.skip-link {
+    position: absolute;
+    top: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(-200%);
+    z-index: 1000;
+    background: #ffffff;
+    color: var(--brand-link);
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+    transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Visible keyboard focus indicator */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid var(--brand-link);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Darker brand purple for small / interactive text to meet AA (4.5:1 on white) */
+.researcher-link,
+.aaai2026-link,
+.vnncomp2026-link,
+.timeline-link,
+.program-time,
+.participants-table .tool-link,
+.paper-citation a,
+.overview-paper h4,
+.committee-role h4,
+.sponsors-cta a,
+.sponsor-visit {
+    color: var(--brand-link);
+}
+
+/* Bump borderline-grey body text to AA */
+.program-topic-desc,
+.tools-list span.tool-no-link {
+    color: #5b6472;
+}
+
+.participants-table .no-participation {
+    color: #64748b;
+}
+
+/* Pill / button hover and solid-fill controls: white text needs the darker fill for AA */
+.aaai2026-link:hover,
+.vnncomp2026-link:hover,
+.timeline-link:hover,
+.repo-link:hover {
+    background: var(--brand-link);
+    color: #ffffff;
+}
+
+.resource-link:hover .resource-text,
+.speaker-link:hover {
+    color: var(--brand-link);
+}
+
+.copy-bibtex-btn {
+    background: var(--brand-link);
+}
+
+.copy-bibtex-btn:hover {
+    background: var(--brand-dark);
+}
+
+/* Tools expand/collapse is now a real <button>; reset native button chrome to match .repo-link */
+button.tools-toggle {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    color: #4a5568;
+}
+
+/* Disabled (no-target) repository links rendered as muted, non-interactive spans */
+.repo-link.disabled {
+    color: #64748b;
+    background: #f7fafc;
+    cursor: default;
+}
+
+.repo-link.disabled:hover {
+    background: #f7fafc;
+    color: #64748b;
+    transform: none;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .btn:hover,
+    .repo-card:hover,
+    .sponsor-card:hover,
+    .resource-link:hover,
+    .nav-list a:hover,
+    .contact-btn:hover,
+    .timeline-link:hover {
+        transform: none !important;
+    }
+}
+
+/* ---- ARCH-COMP additions ---- */
+/* Header logo lockup: white ARCH mark + wordmark on the gradient */
+.logo {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+}
+.logo-img {
+    height: 82px;
+    width: auto;
+    display: block;
+    margin: 0 auto 0.55rem;
+}
+.logo-word {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+/* Category lead line inside category cards */
+.cat-lead {
+    margin-top: 0.85rem;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+.cat-lead strong { color: var(--brand-slate); }
+
+@media (max-width: 600px) {
+    .logo-img { height: 60px; }
+    .logo-word { font-size: 1.3rem; }
+}

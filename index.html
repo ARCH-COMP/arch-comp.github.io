@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCH-COMP - International Competition on Verifying Continuous and Hybrid Systems</title>
+    <meta name="description" content="ARCH-COMP is the friendly international competition for the verification of continuous and hybrid systems, held annually since 2017 as part of the ARCH workshop. Seven categories spanning reachability, falsification, stochastic models, and neural network control.">
+    <link rel="canonical" href="https://arch-comp.github.io/">
+    <meta name="theme-color" content="#2563eb">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ARCH-COMP">
+    <meta property="og:title" content="ARCH-COMP - Applied Verification of Continuous and Hybrid Systems">
+    <meta property="og:description" content="The friendly international competition for the verification of continuous and hybrid systems, held annually since 2017.">
+    <meta property="og:url" content="https://arch-comp.github.io/">
+    <meta property="og:image" content="https://arch-comp.github.io/images/og-card.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ARCH-COMP - Applied Verification of Continuous and Hybrid Systems">
+    <meta name="twitter:description" content="The friendly international competition for the verification of continuous and hybrid systems, held annually since 2017.">
+    <meta name="twitter:image" content="https://arch-comp.github.io/images/og-card.png">
+
+    <!-- Icons -->
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://arch-comp.github.io/#organization",
+          "name": "ARCH-COMP",
+          "alternateName": "International Competition on Verifying Continuous and Hybrid Systems",
+          "url": "https://arch-comp.github.io/",
+          "logo": "https://arch-comp.github.io/apple-touch-icon.png",
+          "sameAs": ["https://github.com/ARCH-COMP", "https://cps-vo.org/group/ARCH", "https://gitlab.com/goranf/ARCH-COMP"]
+        },
+        {
+          "@type": "Event",
+          "name": "ARCH-COMP 2027 - Friendly Competition on Verifying Continuous and Hybrid Systems",
+          "startDate": "2027-06-02",
+          "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "url": "https://arch-comp.github.io/#archcomp2027",
+          "location": {
+            "@type": "VirtualLocation",
+            "url": "https://cps-vo.org/group/ARCH"
+          },
+          "organizer": { "@id": "https://arch-comp.github.io/#organization" }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#hero" class="logo" aria-label="ARCH-COMP home">
+                    <img src="logo-white.svg" alt="ARCH" class="logo-img" width="300" height="100">
+                    <span class="logo-word">ARCH-COMP</span>
+                </a>
+                <p class="tagline">Applied Verification of Continuous and Hybrid Systems</p>
+            </div>
+            <nav class="nav" aria-label="Primary">
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#archcomp2027">ARCH-COMP 2027</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#competitions">Editions</a></li>
+                    <li><a href="#repositories">Repositories</a></li>
+                    <li><a href="#organizers">Organizers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main" id="main">
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Advancing Verification of Continuous and Hybrid Systems</h1>
+                    <p class="hero-description">
+                        ARCH-COMP is the friendly international competition for the verification of continuous
+                        and hybrid systems. Held annually since 2017 as part of the ARCH workshop, it brings
+                        together tool developers across seven categories &mdash; from reachability analysis to
+                        falsification, stochastic models, and neural network control &mdash; on a shared,
+                        reproducible set of benchmarks.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#archcomp2027" class="btn btn-primary">ARCH-COMP 2027</a>
+                        <a href="#categories" class="btn btn-secondary">Explore Categories</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About ARCH-COMP</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            ARCH-COMP is the annual <strong>friendly competition</strong> of the
+                            <a href="https://cps-vo.org/group/ARCH" class="researcher-link" target="_blank" rel="noopener">ARCH workshop</a>
+                            (Applied Verification for Continuous and Hybrid Systems), which since 2014 has focused on
+                            transferring verification techniques for cyber-physical systems from theory to practice.
+                            Since 2017, the competition has evaluated and compared state-of-the-art verification tools
+                            on a curated, openly available collection of benchmarks.
+                        </p>
+                        <p>
+                            Each category is coordinated by dedicated organizers who agree on benchmarks and metrics
+                            with the participants. All results are made <strong>repeatable</strong>: participants submit
+                            installation and execution scripts (typically containerized) so that every reported result
+                            can be independently reproduced. Category reports are published each year in the
+                            <em>EPiC Series in Computing</em>.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">7</span>
+                            <span class="stat-label">Competition Categories</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">40+</span>
+                            <span class="stat-label">Participating Tools</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10</span>
+                            <span class="stat-label">Editions (2017&ndash;2026)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="archcomp2027" class="vnncomp2026">
+            <div class="container">
+                <h2 class="section-title">ARCH-COMP 2027</h2>
+
+                <div class="vnncomp2026-header">
+                    <div class="vnncomp2026-meta">
+                        <div class="vnncomp2026-meta-item">
+                            <strong>11th International Competition on Verifying Continuous and Hybrid Systems</strong>
+                        </div>
+                    </div>
+
+                    <div class="vnncomp2026-meta">
+                        <div class="vnncomp2026-meta-item">
+                            <strong>Part of:</strong> <a href="https://cps-vo.org/group/ARCH" class="researcher-link" target="_blank" rel="noopener">ARCH 2027 Workshop</a>
+                        </div>
+                        <div class="vnncomp2026-meta-item">
+                            <strong>Date:</strong> Wednesday, June 2, 2027
+                        </div>
+                        <div class="vnncomp2026-meta-item">
+                            <strong>Format:</strong> Online
+                        </div>
+                    </div>
+
+                    <div class="vnncomp2026-links">
+                        <a href="https://cps-vo.org/group/ARCH/FriendlyCompetition" class="vnncomp2026-link" target="_blank" rel="noopener">Friendly Competition</a>
+                        <a href="https://cps-vo.org/group/ARCH/CallForSubmissions" class="vnncomp2026-link" target="_blank" rel="noopener">Call for Submissions</a>
+                        <a href="https://gitlab.com/goranf/ARCH-COMP" class="vnncomp2026-link" target="_blank" rel="noopener">Repeatability Repository</a>
+                        <a href="https://arch.repeatability.cps.cit.tum.de/" class="vnncomp2026-link" target="_blank" rel="noopener">Evaluation Platform</a>
+                    </div>
+                </div>
+
+                <!-- Call for participation -->
+                <div class="vnncomp2026-section">
+                    <h3 class="vnncomp2026-section-title">Call for Participation</h3>
+                    <p class="section-text">
+                        ARCH-COMP 2027 invites tool developers and benchmark proposers across all seven categories.
+                        Participants agree on benchmarks and evaluation metrics within each category, run their tools
+                        on the shared instances, and submit repeatability packages so results can be independently
+                        reproduced. New participants and new benchmarks are warmly welcomed &mdash; see the
+                        <a href="https://cps-vo.org/group/ARCH/CallForSubmissions" target="_blank" rel="noopener">Call for Submissions</a>
+                        and reach out to the relevant category leads.
+                    </p>
+                </div>
+
+                <!-- Participation Info -->
+                <div class="vnncomp2026-section">
+                    <h3 class="vnncomp2026-section-title">How to Participate</h3>
+                    <div class="participation-grid">
+                        <div class="participation-card">
+                            <h4>Tool Developers</h4>
+                            <p>Enter your verification tool in one or more categories and compare against the state of the art on agreed benchmarks.</p>
+                            <ul>
+                                <li>Pick your categories and join the discussion</li>
+                                <li>Provide install &amp; run scripts (Docker preferred)</li>
+                                <li>Submit a repeatability package</li>
+                            </ul>
+                        </div>
+                        <div class="participation-card">
+                            <h4>Benchmark Proposers</h4>
+                            <p>Contribute challenging, real-world benchmarks that push the tools in a category forward.</p>
+                            <ul>
+                                <li>Coordinate with the category leads</li>
+                                <li>Provide models, specifications, and instances</li>
+                                <li>Document the expected verification results</li>
+                            </ul>
+                        </div>
+                        <div class="participation-card">
+                            <h4>New Categories</h4>
+                            <p>ARCH-COMP evolves with the community. Proposals for new problem classes are welcome.</p>
+                            <ul>
+                                <li>Sketch the problem class and metrics</li>
+                                <li>Line up an initial set of participants</li>
+                                <li>Contact the general chairs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resources -->
+                <div class="vnncomp2026-section">
+                    <h3 class="vnncomp2026-section-title">Resources</h3>
+                    <div class="resources-grid">
+                        <a href="https://gitlab.com/goranf/ARCH-COMP" class="resource-link" target="_blank" rel="noopener">
+                            <span class="resource-icon">📁</span>
+                            <span class="resource-text">Repeatability Repository</span>
+                        </a>
+                        <a href="https://cps-vo.org/group/ARCH/FriendlyCompetition" class="resource-link" target="_blank" rel="noopener">
+                            <span class="resource-icon">🏆</span>
+                            <span class="resource-text">Friendly Competition</span>
+                        </a>
+                        <a href="https://arch.repeatability.cps.cit.tum.de/" class="resource-link" target="_blank" rel="noopener">
+                            <span class="resource-icon">🖥️</span>
+                            <span class="resource-text">Evaluation Platform</span>
+                        </a>
+                        <a href="https://cps-vo.org/group/ARCH" class="resource-link" target="_blank" rel="noopener">
+                            <span class="resource-icon">🌐</span>
+                            <span class="resource-text">ARCH Website (CPS-VO)</span>
+                        </a>
+                        <a href="https://easychair.org/publications/EPiC/Computing" class="resource-link" target="_blank" rel="noopener">
+                            <span class="resource-icon">📜</span>
+                            <span class="resource-text">Proceedings (EPiC Series)</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories" class="repositories">
+            <div class="container">
+                <h2 class="section-title">Competition Categories</h2>
+                <p class="section-description">
+                    ARCH-COMP is organized into seven categories, each coordinated by dedicated leads who agree on
+                    benchmarks and metrics with the participants. Not every category runs in every edition.
+                </p>
+
+                <div class="repo-grid">
+                    <div class="repo-card">
+                        <h3 class="repo-year">Linear Dynamics</h3>
+                        <p class="section-text">Reachability and safety verification of continuous and hybrid systems with linear (affine) dynamics.</p>
+                        <p class="cat-lead"><strong>Lead:</strong> Matthias Althoff (TU Munich)</p>
+                    </div>
+                    <div class="repo-card">
+                        <h3 class="repo-year">Nonlinear Dynamics</h3>
+                        <p class="section-text">Reachability analysis for continuous and hybrid systems governed by nonlinear ODEs.</p>
+                        <p class="cat-lead"><strong>Lead:</strong> Luca Geretti (University of Verona)</p>
+                    </div>
+                    <div class="repo-card">
+                        <h3 class="repo-year">Piecewise Constant Dynamics</h3>
+                        <p class="section-text">Verification of hybrid automata with piecewise constant (rectangular) dynamics.</p>
+                        <p class="cat-lead"><strong>Lead:</strong> Lei Bu (Nanjing University)</p>
+                    </div>
+                    <div class="repo-card">
+                        <h3 class="repo-year">AI &amp; Neural Network Control (AINNCS)</h3>
+                        <p class="section-text">Verification of closed-loop systems whose controllers are neural networks.</p>
+                        <p class="cat-lead"><strong>Lead:</strong> Taylor T. Johnson (Vanderbilt University)</p>
+                    </div>
+                    <div class="repo-card">
+                        <h3 class="repo-year">Stochastic Models</h3>
+                        <p class="section-text">Verification and controller synthesis for stochastic and probabilistic dynamical systems.</p>
+                        <p class="cat-lead"><strong>Lead:</strong> Abolfazl Lavaei (Newcastle University)</p>
+                    </div>
+                    <div class="repo-card">
+                        <h3 class="repo-year">Falsification</h3>
+                        <p class="section-text">Finding counterexamples to temporal-logic specifications for cyber-physical systems.</p>
+                        <p class="cat-lead"><strong>Lead:</strong> Ivan Porres (Åbo Akademi University)</p>
+                    </div>
+                    <div class="repo-card">
+                        <h3 class="repo-year">Hybrid Programs</h3>
+                        <p class="section-text">Deductive verification and theorem proving for hybrid programs.</p>
+                        <p class="cat-lead"><strong>Lead:</strong> Stefan Mitsch (DePaul University)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competitions" class="competitions">
+            <div class="container">
+                <h2 class="section-title">Competition Editions</h2>
+                <div class="timeline">
+                    <div class="timeline-item" data-year="2027">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">ARCH-COMP 2027</h3>
+                            <p class="timeline-description">11th edition, held online as part of the ARCH 2027 workshop on June 2, 2027. Call for participation open.</p>
+                            <div class="timeline-links">
+                                <a href="#archcomp2027" class="timeline-link">Competition Info</a>
+                                <a href="https://cps-vo.org/group/ARCH/CallForSubmissions" class="timeline-link" target="_blank" rel="noopener">Call for Submissions</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2026">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">ARCH-COMP 2026</h3>
+                            <p class="timeline-description">10th edition of the friendly competition, held with the ARCH workshop.</p>
+                            <div class="timeline-links">
+                                <a href="https://cps-vo.org/group/ARCH/FriendlyCompetition" class="timeline-link" target="_blank" rel="noopener">Competition Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2025">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">ARCH-COMP 2025</h3>
+                            <p class="timeline-description">9th edition, spanning the reachability, falsification, stochastic, AINNCS, and hybrid-program categories.</p>
+                            <div class="timeline-links">
+                                <a href="https://gitlab.com/goranf/ARCH-COMP/-/tree/master/2025" class="timeline-link" target="_blank" rel="noopener">Repeatability</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2024">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">ARCH-COMP 2024</h3>
+                            <p class="timeline-description">8th edition. Category reports published in the EPiC Series in Computing.</p>
+                            <div class="timeline-links">
+                                <a href="https://gitlab.com/goranf/ARCH-COMP/-/tree/master/2024" class="timeline-link" target="_blank" rel="noopener">Repeatability</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2023">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">ARCH-COMP 2023</h3>
+                            <p class="timeline-description">7th edition, also featured in the TOOLympics Challenge at ETAPS 2023.</p>
+                            <div class="timeline-links">
+                                <a href="https://gitlab.com/goranf/ARCH-COMP/-/tree/master/2023" class="timeline-link" target="_blank" rel="noopener">Repeatability</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2022">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">ARCH-COMP 2022</h3>
+                            <p class="timeline-description">6th edition of the friendly competition.</p>
+                            <div class="timeline-links">
+                                <a href="https://gitlab.com/goranf/ARCH-COMP/-/tree/master/2022" class="timeline-link" target="_blank" rel="noopener">Repeatability</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2021">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">ARCH-COMP 2021</h3>
+                            <p class="timeline-description">5th edition, held with the 8th ARCH workshop.</p>
+                            <div class="timeline-links">
+                                <a href="https://gitlab.com/goranf/ARCH-COMP/-/tree/master/2021" class="timeline-link" target="_blank" rel="noopener">Repeatability</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2020">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">ARCH-COMP 2020</h3>
+                            <p class="timeline-description">4th edition of the friendly competition.</p>
+                            <div class="timeline-links">
+                                <a href="https://gitlab.com/goranf/ARCH-COMP/-/tree/master/2020" class="timeline-link" target="_blank" rel="noopener">Repeatability</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2019">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">ARCH-COMP 2019</h3>
+                            <p class="timeline-description">3rd edition of the competition on verifying continuous and hybrid systems.</p>
+                            <div class="timeline-links">
+                                <a href="https://gitlab.com/goranf/ARCH-COMP/-/tree/master/2019" class="timeline-link" target="_blank" rel="noopener">Repeatability</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2018">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">ARCH-COMP 2018</h3>
+                            <p class="timeline-description">2nd edition of the friendly competition.</p>
+                            <div class="timeline-links">
+                                <a href="https://gitlab.com/goranf/ARCH-COMP/-/tree/master/2018" class="timeline-link" target="_blank" rel="noopener">Repeatability</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-year="2017">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">ARCH-COMP 2017</h3>
+                            <p class="timeline-description">The inaugural ARCH friendly competition.</p>
+                            <div class="timeline-links">
+                                <a href="https://gitlab.com/goranf/ARCH-COMP/-/tree/master/2017" class="timeline-link" target="_blank" rel="noopener">Repeatability</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="repositories" class="repositories">
+            <div class="container">
+                <h2 class="section-title">Repositories &amp; Platforms</h2>
+                <p class="section-description">
+                    Benchmarks, repeatability packages, results, and the evaluation platform.
+                </p>
+
+                <div class="repo-grid">
+                    <div class="repo-card">
+                        <h3 class="repo-year">Repeatability</h3>
+                        <div class="repo-links">
+                            <a href="https://gitlab.com/goranf/ARCH-COMP" class="repo-link" target="_blank" rel="noopener">GitLab: goranf/ARCH-COMP</a>
+                            <a href="https://gitlab.com/goranf/ARCH-COMP/-/blob/master/README.md" class="repo-link" target="_blank" rel="noopener">Submission Guide</a>
+                        </div>
+                    </div>
+                    <div class="repo-card">
+                        <h3 class="repo-year">Evaluation Platform</h3>
+                        <div class="repo-links">
+                            <a href="https://arch.repeatability.cps.cit.tum.de/" class="repo-link" target="_blank" rel="noopener">Submission &amp; Evaluation</a>
+                        </div>
+                    </div>
+                    <div class="repo-card">
+                        <h3 class="repo-year">AINNCS Benchmarks</h3>
+                        <div class="repo-links">
+                            <a href="https://github.com/verivital/ARCH-COMP2024" class="repo-link" target="_blank" rel="noopener">verivital / ARCH-COMP</a>
+                        </div>
+                    </div>
+                    <div class="repo-card">
+                        <h3 class="repo-year">ARCH Website</h3>
+                        <div class="repo-links">
+                            <a href="https://cps-vo.org/group/ARCH" class="repo-link" target="_blank" rel="noopener">CPS-VO Group</a>
+                            <a href="https://cps-vo.org/group/ARCH/FriendlyCompetition" class="repo-link" target="_blank" rel="noopener">Friendly Competition</a>
+                        </div>
+                    </div>
+                    <div class="repo-card">
+                        <h3 class="repo-year">GitHub</h3>
+                        <div class="repo-links">
+                            <a href="https://github.com/ARCH-COMP" class="repo-link" target="_blank" rel="noopener">ARCH-COMP Organization</a>
+                        </div>
+                    </div>
+                    <div class="repo-card">
+                        <h3 class="repo-year">Proceedings</h3>
+                        <div class="repo-links">
+                            <a href="https://easychair.org/publications/EPiC/Computing" class="repo-link" target="_blank" rel="noopener">EPiC Series in Computing</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Publications -->
+                <div class="publications-section" id="publications">
+                    <h3 class="publications-title">Publications</h3>
+
+                    <div class="overview-paper">
+                        <h4>Overview Paper</h4>
+                        <p class="paper-citation">
+                            A. Abate, M. Althoff, L. Bu, G. Ernst, G. Frehse, L. Geretti, T. T. Johnson, C. Menghi,
+                            S. Mitsch, S. Schupp, and S. Soudjani,
+                            "<a href="https://doi.org/10.1007/978-3-031-67695-6_1" target="_blank" rel="noopener">The ARCH-COMP Friendly Verification Competition for Continuous and Hybrid Systems</a>,"
+                            in <em>TOOLympics Challenge 2023</em>, LNCS, Springer, pp. 1&ndash;37, 2023.
+                        </p>
+                        <p class="section-text">
+                            Category reports for each edition are published annually in the
+                            <a href="https://easychair.org/publications/EPiC/Computing" target="_blank" rel="noopener">EPiC Series in Computing</a>.
+                        </p>
+                    </div>
+
+                    <div class="bibtex-section">
+                        <h4>BibTeX <button class="copy-bibtex-btn" onclick="copyBibtex()">Copy</button></h4>
+                        <pre class="bibtex-code" id="bibtex-content">@inproceedings{abate2023archcomp_overview,
+  title     = {The {ARCH-COMP} Friendly Verification Competition for Continuous and Hybrid Systems},
+  author    = {Abate, Alessandro and Althoff, Matthias and Bu, Lei and Ernst, Gidon and Frehse, Goran and Geretti, Luca and Johnson, Taylor T. and Menghi, Claudio and Mitsch, Stefan and Schupp, Stefan and Soudjani, Sadegh},
+  booktitle = {TOOLympics Challenge 2023},
+  series    = {Lecture Notes in Computer Science},
+  pages     = {1--37},
+  year      = {2023},
+  publisher = {Springer},
+  doi       = {10.1007/978-3-031-67695-6_1}
+}</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="organizers" class="participants">
+            <div class="container">
+                <h2 class="section-title">Organizers</h2>
+                <p class="section-description">
+                    ARCH-COMP is run by a team of general chairs together with the leads of each category.
+                </p>
+
+                <div class="committee-grid">
+                    <div class="committee-role">
+                        <h4>General Chairs</h4>
+                        <p>
+                            <a href="https://ensta-paris.fr/" class="researcher-link" target="_blank" rel="noopener">Goran Frehse</a> (ENSTA, IP Paris),
+                            <a href="https://www.ce.cit.tum.de/en/cps/members/prof-dr-ing-matthias-althoff/" class="researcher-link" target="_blank" rel="noopener">Matthias Althoff</a> (TU Munich)
+                        </p>
+                    </div>
+                    <div class="committee-role">
+                        <h4>Evaluation Chair</h4>
+                        <p>
+                            <a href="https://www.taylortjohnson.com/" class="researcher-link" target="_blank" rel="noopener">Taylor T. Johnson</a> (Vanderbilt University)
+                        </p>
+                    </div>
+                    <div class="committee-role">
+                        <h4>Publication Chair</h4>
+                        <p>
+                            <a href="https://www.di.univr.it/?ent=persona&id=32338" class="researcher-link" target="_blank" rel="noopener">Luca Geretti</a> (University of Verona)
+                        </p>
+                    </div>
+                    <div class="committee-role">
+                        <h4>Category Leads</h4>
+                        <p>
+                            Matthias Althoff (Linear), Luca Geretti (Nonlinear), Lei Bu (Piecewise Constant),
+                            Taylor T. Johnson (AINNCS), Abolfazl Lavaei (Stochastic), Ivan Porres (Falsification),
+                            Stefan Mitsch (Hybrid Programs)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get Involved</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Join the Community</h3>
+                        <p>
+                            Interested in participating or contributing to ARCH-COMP? We welcome tool developers,
+                            benchmark proposers, and researchers working on the verification of continuous, hybrid,
+                            stochastic, and learning-enabled cyber-physical systems.
+                        </p>
+                        <ul class="contact-list">
+                            <li>Join the ARCH community on CPS-VO</li>
+                            <li>Contribute benchmarks and tools to a category</li>
+                            <li>Submit a repeatability package</li>
+                            <li>Participate in the annual competition</li>
+                        </ul>
+                    </div>
+                    <div class="contact-links">
+                        <a href="https://cps-vo.org/group/ARCH" class="contact-btn" target="_blank" rel="noopener">ARCH on CPS-VO</a>
+                        <a href="https://cps-vo.org/group/ARCH/FriendlyCompetition" class="contact-btn" target="_blank" rel="noopener">Friendly Competition</a>
+                        <a href="https://github.com/ARCH-COMP" class="contact-btn" target="_blank" rel="noopener">GitHub Organization</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>ARCH-COMP</h3>
+                    <p>Applied Verification of Continuous and Hybrid Systems</p>
+                </div>
+                <nav class="footer-links" aria-label="Footer">
+                    <a href="#about">About</a>
+                    <a href="#categories">Categories</a>
+                    <a href="#competitions">Editions</a>
+                    <a href="#repositories">Repositories</a>
+                    <a href="https://github.com/ARCH-COMP" target="_blank" rel="noopener">GitHub</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2027 ARCH-COMP. Content licensed under the MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
