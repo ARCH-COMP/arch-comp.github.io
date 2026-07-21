@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call for Participation — ARCH-COMP 2027</title>
+    <meta name="description" content="How to take part in ARCH-COMP 2027: the friendly competition process, deadlines, categories, and repeatability submission.">
+    <link rel="canonical" href="https://arch-comp.github.io/participate.html">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo" aria-label="ARCH-COMP home">
+                    <img src="logo-white.svg" alt="ARCH" class="logo-img" width="300" height="100">
+                    <span class="logo-word">ARCH-COMP</span>
+                </a>
+                <p class="tagline">Applied Verification of Continuous and Hybrid Systems</p>
+            </div>
+            <nav class="nav" aria-label="Primary">
+                <ul class="nav-list">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#archcomp2027">ARCH-COMP 2027</a></li>
+                    <li><a href="index.html#categories">Categories</a></li>
+                    <li><a href="participate.html">Participate</a></li>
+                    <li><a href="index.html#competitions">Editions</a></li>
+                    <li><a href="proceedings.html">Proceedings</a></li>
+                    <li><a href="index.html#repositories">Repositories</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main subpage" id="main">
+        <div class="container">
+            <div class="breadcrumb"><a href="index.html">Home</a> / Call for Participation</div>
+            <h1 class="subpage-title">Call for Participation</h1>
+            <p class="subpage-lead">
+                ARCH-COMP 2027 &mdash; the 11th International Competition on Verifying Continuous and
+                Hybrid Systems &mdash; invites tool developers and benchmark proposers across all seven
+                categories. The competition is <strong>friendly</strong>: within each category, participants
+                jointly agree on benchmarks and metrics, then run their tools on the shared instances.
+            </p>
+
+            <div class="facts">
+                <div><strong>Part of:</strong> ARCH 2027 Workshop</div>
+                <div><strong>Presentation:</strong> June 2, 2027 (online)</div>
+                <div><strong>Contact:</strong> <a href="mailto:arch27-comp@easychair.org" class="researcher-link">arch27-comp@easychair.org</a></div>
+                <div><strong>Statutes:</strong> <a href="https://docs.google.com/document/d/e/2PACX-1vTxf4TxfDbbdfAaTiBhW5FXM7I08dJ8apJQLb_9lZnCRDi6ySZMUTIUY5yaIYcVRRXa02kRDs9wgNZp/pub" class="researcher-link" target="_blank" rel="noopener">Competition statutes</a></div>
+            </div>
+
+            <h2>The Process</h2>
+            <div class="step-list">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <div class="step-body">
+                        <span class="step-deadline">Deadline: March 10</span>
+                        <h3>Join a category group</h3>
+                        <p>
+                            Pick the <a href="index.html#categories">category</a> (or categories) that
+                            treat problems similar to yours and join that group. Each category is coordinated
+                            by a lead who can point you to the current benchmarks and discussion. New
+                            participants are always welcome.
+                        </p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <div class="step-body">
+                        <span class="step-deadline">Deadline: March 24</span>
+                        <h3>Agree on benchmarks &amp; submit preliminary results</h3>
+                        <p>
+                            Each group settles its benchmark set &mdash; everybody can propose, and all
+                            should approve. Benchmarks already in the ARCH repository are preferred; problems
+                            are refined in group discussion. Models and data are collected under
+                            <a href="https://gitlab.com/goranf/ARCH-COMP/-/tree/master/models" target="_blank" rel="noopener">goranf/ARCH-COMP/models</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <div class="step-body">
+                        <span class="step-deadline">Deadline: May 12</span>
+                        <h3>Submit your repeatability package</h3>
+                        <p>
+                            Provide install and run scripts (containerized with Docker is preferred) so your
+                            results can be independently reproduced. Submit through the
+                            <a href="https://arch.repeatability.cps.cit.tum.de/" target="_blank" rel="noopener">evaluation platform</a>
+                            &mdash; see the
+                            <a href="https://arch.repeatability.cps.cit.tum.de/getting-started" target="_blank" rel="noopener">getting-started guide</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">4</div>
+                    <div class="step-body">
+                        <span class="step-deadline">Deadline: May 26</span>
+                        <h3>Prepare the results report</h3>
+                        <p>
+                            Each category assembles its results report. The evaluation chair confirms that the
+                            repeatability packages reproduce the reported results and signals approval.
+                        </p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">5</div>
+                    <div class="step-body">
+                        <span class="step-deadline">June 2, 2027</span>
+                        <h3>Present &amp; publish</h3>
+                        <p>
+                            Results are presented at the ARCH 2027 workshop and published as a category report
+                            in the <a href="proceedings.html">EPiC Series in Computing</a> proceedings
+                            (DBLP-indexed).
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Who can take part</h2>
+            <div class="participation-grid">
+                <div class="participation-card">
+                    <h4>Tool Developers</h4>
+                    <p>Enter your verification tool in one or more categories and compare against the state of the art on agreed benchmarks.</p>
+                    <ul>
+                        <li>Pick your categories and join the discussion</li>
+                        <li>Provide install &amp; run scripts (Docker preferred)</li>
+                        <li>Submit a repeatability package</li>
+                    </ul>
+                </div>
+                <div class="participation-card">
+                    <h4>Benchmark Proposers</h4>
+                    <p>Contribute challenging, real-world benchmarks that push the tools in a category forward.</p>
+                    <ul>
+                        <li>Coordinate with the category leads</li>
+                        <li>Provide models, specifications, and instances</li>
+                        <li>Document the expected verification results</li>
+                    </ul>
+                </div>
+                <div class="participation-card">
+                    <h4>New Categories</h4>
+                    <p>ARCH-COMP evolves with the community. Proposals for new problem classes are welcome.</p>
+                    <ul>
+                        <li>Sketch the problem class and metrics</li>
+                        <li>Line up an initial set of participants</li>
+                        <li>Contact the general chairs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="olympics-cta" style="margin-top:2.5rem;">
+                <a href="mailto:arch27-comp@easychair.org" class="btn btn-primary">Email the organizers to get started</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>ARCH-COMP</h3>
+                    <p>Applied Verification of Continuous and Hybrid Systems</p>
+                </div>
+                <nav class="footer-links" aria-label="Footer">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#categories">Categories</a>
+                    <a href="participate.html">Participate</a>
+                    <a href="proceedings.html">Proceedings</a>
+                    <a href="index.html#repositories">Repositories</a>
+                    <a href="https://github.com/ARCH-COMP" target="_blank" rel="noopener">GitHub</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2027 ARCH-COMP. Content licensed under the MIT License.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

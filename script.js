@@ -28,31 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Reveal timeline items and cards on scroll
-    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
-    const revealObserver = new IntersectionObserver(function (entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, observerOptions);
-
-    document.querySelectorAll('.timeline-item').forEach(item => {
-        item.style.opacity = '0';
-        item.style.transform = 'translateY(30px)';
-        item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        revealObserver.observe(item);
-    });
-
-    document.querySelectorAll('.repo-card').forEach((card, index) => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(30px)';
-        card.style.transition = `opacity 0.6s ease ${index * 0.08}s, transform 0.6s ease ${index * 0.08}s`;
-        revealObserver.observe(card);
-    });
-
     // Keyboard shortcuts: h = top, c = categories, r = repositories
     document.addEventListener('keydown', function (e) {
         if (e.ctrlKey || e.altKey || e.metaKey) return;
