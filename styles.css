@@ -1663,3 +1663,8 @@ button.tools-toggle {
 .editions-table a:hover { text-decoration: underline; }
 .editions-table .muted { color: #94a3b8; }
 .year-cell { font-weight: 700; color: #2d3748; white-space: nowrap; }
+
+/* Navbar: visually separate in-page section links from standalone pages */
+.nav-list .nav-sep { width: 1px; height: 22px; align-self: center; background: rgba(255,255,255,0.45); }
+.about-cta { margin-top: 1.75rem; }
+@media (max-width: 600px) { .nav-list .nav-sep { display: none; } }

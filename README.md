@@ -9,8 +9,8 @@ Static site (plain HTML/CSS/JS), published via GitHub Pages from the `main` bran
 ## Structure
 - `index.html` — the single-page site
 - `styles.css`, `script.js` — styling and interactions
-- `logo.svg` (blue→teal gradient) / `logo-white.svg` (header) — the ARCH logo, recolored
-- `favicon.*`, `apple-touch-icon.png`, `images/og-card.png` — icons and social card
+- `images/logo.svg` (blue→teal gradient) / `images/logo-white.svg` (header) — the ARCH logo, recolored
+- `images/favicon.*`, `images/apple-touch-icon.png`, `images/og-card.png` — icons and social card
 
 ## Local preview
 Open `index.html` in a browser, or run `python -m http.server` in this directory and visit
