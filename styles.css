@@ -1718,5 +1718,5 @@ button.tools-toggle {
 
 /* Navbar: visually separate in-page section links from standalone pages */
 .nav-list .nav-sep { width: 1px; height: 22px; align-self: center; background: rgba(255,255,255,0.45); }
-.about-cta { margin-top: 1.75rem; }
+.about-cta { margin-top: 1.75rem; display: flex; gap: 1rem; flex-wrap: wrap; }
 @media (max-width: 600px) { .nav-list .nav-sep { display: none; } }
