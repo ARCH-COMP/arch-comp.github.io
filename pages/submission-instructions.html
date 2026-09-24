@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Instructions — ARCH</title>
+    <meta name="description" content="How to prepare and submit the final version of an accepted ARCH paper; part of the call for submissions.">
+    <link rel="canonical" href="https://arch-comp.github.io/pages/submission-instructions.html">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="icon" href="../images/favicon.ico" sizes="any">
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/edition.js"></script>
+    <script src="../js/layout.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <script>ARCH.header()</script>
+
+    <main class="main subpage" id="main">
+        <div class="container">
+            <div class="breadcrumb"><a href="../index.html">Home</a> / <a href="call-for-submissions.html">Call for Submissions</a> / Submission Instructions</div>
+            <h1 class="subpage-title">Submission Instructions</h1>
+            <p class="subpage-lead">How to prepare and submit the final version of an accepted ARCH paper; part of the <a href="call-for-submissions.html">call for submissions</a>.</p>
+            <div class="prose">
+<h2>Final Version Preparation Instructions</h2>
+<p>Please use the EasyChair template at <a href="http://www.easychair.org/publications/easychair.zip" target="_blank" rel="noopener">http://www.easychair.org/publications/easychair.zip</a></p>
+<p>We kindly ask you to consider the following constraints carefully:</p>
+<p>1. Title and topics: Each paper must decide on one of the following topics:</p>
+<ul><li>Benchmark proposal: Proposals for new benchmark problems (not necessarily yet solvable)</li>
+<li>Tool presentation: New and improved tools incl. evaluations preferrably from ARCH benchmarks</li>
+<li>Experience reports: Gained experience including open issues for industrial success</li>
+<li>ARCH-COMP report: Reports on results of our friendly competition (separate call)</li>
+</ul>
+<p>The topic has to be specified in the submission form. If you are presenting results for a benchmark that has already been proposed, then please choose "experience report". If you are proposing a new benchmark, but also give some results, then please choose "benchmark proposal". The title of your paper should NOT include the topic. Please also do not use variations of topics in the title:</p>
+<ul><li>wrong: "Benchmark: Performance Guarantees for Forklifts"</li>
+<li>right: "Performance Guarantees for Forklifts"</li>
+<li>wrong: "Benchmark Results: We Dig Forklifts"</li>
+<li>right: "We Dig Forklifts"</li>
+<li>wrong: "Tool: The Forklift Analyzer"</li>
+<li>right: "The Forklift Analyzer"</li>
+<li>wrong: "Tool Results: The Forklift Analyzer Rules"</li>
+<li>right: "The Forklift Analyzer Rules"<br><br>In the pdf, you should display the category in parentheses underneath the title, unless it's just a regular paper. For example: Performance Guarantees for Forklifts (Benchmark Proposal).<br><br>In Latex, the easiest way to produce the above is to add the category line in the \title segment, but this is only a Latex hack: \title{Performance Guarantees for Forklifts\\ (Benchmark Proposal)}.<br><br>In the EasyChair submission info, the title should still be: Performance Guarantees for Forklifts</li>
+</ul>
+<p>2. Use the header \documentclass[EPiC]{easychair}.</p>
+<p>3. To avoid orphan and widow lines, include the nowidow package as follows: \usepackage[defaultlines=4,all]{nowidow}</p>
+<p>4. Do NOT include a table of contents.</p>
+<p>5. Do not change the font (packages times, mathptmx, etc. are not allowed).</p>
+<p>6. Place all figures at the top of the page.</p>
+<p>7. Use the package booktab for tables.</p>
+<p>8. Check the margins (top, bottom, right). Neither text, formulas, nor graphics are allowed to go beyond the normal margins for text.</p>
+<p>9. In the title of the paper, please avoid lines with only one word. For example, instead of An example with a long title for illustration adding a line break leads to the preferable version: An example with a long title for illustration</p>
+<p>10. Please check your bibliography carefully, in particular concerning confusion of first names, last names, middle initials, and capital letters. The safest way is the following: author = {Mouse, Mickey A. and Duck, Donald B. and {van der Pol}, Balthasar}</p>
+
+            </div>
+        </div>
+    </main>
+
+    <script>ARCH.footer()</script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -28,6 +28,28 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    // Nav dropdowns: click/Enter toggles, Escape or leaving the group closes (hover opens via CSS)
+    const groups = document.querySelectorAll('.nav-group');
+    const setOpen = (group, open) => {
+        group.classList.toggle('open', open);
+        group.querySelector('.nav-group-toggle').setAttribute('aria-expanded', String(open));
+    };
+    groups.forEach(group => {
+        const toggle = group.querySelector('.nav-group-toggle');
+        toggle.addEventListener('click', () => {
+            const open = !group.classList.contains('open');
+            groups.forEach(g => setOpen(g, false));
+            setOpen(group, open);
+        });
+        group.addEventListener('focusout', e => { if (!group.contains(e.relatedTarget)) setOpen(group, false); });
+        group.addEventListener('keydown', e => {
+            if (e.key === 'Escape' && group.classList.contains('open')) { setOpen(group, false); toggle.focus(); }
+        });
+    });
+    document.addEventListener('click', e => {
+        groups.forEach(g => { if (!g.contains(e.target)) setOpen(g, false); });
+    });
+
     // Keyboard shortcuts: h = top, c = categories, r = repositories
     document.addEventListener('keydown', function (e) {
         if (e.ctrlKey || e.altKey || e.metaKey) return;
